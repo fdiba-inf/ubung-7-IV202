@@ -12,11 +12,19 @@ public class Triangle {
         for (int line = 1; line <= n; line++) {
             printLine(1, line);
         }
-
+        for (int line = n - 1; line >= 1; line--) {
+                printLine(1, line);
+            }
         // Print the bottom part of the triangle that is under the longest line
     }
 
     public static void printLine(int start, int end) {
-        // Implement method
+        for (int x = start; x <= end; x++) {
+                System.out.print(x);
+                if(x != end) {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
     }
-}
